@@ -84,7 +84,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        var el = findBlockContainer(selection.range.endContainer);
 	        var nextElement = el.nextSibling;
 
-	        if (nextElement) {
+	        if (nextElement && scribe.el.contains(nextElement)) {
 	          scribe.el.insertBefore(tableElement, nextElement);
 	        }
 
